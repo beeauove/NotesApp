@@ -7,8 +7,7 @@ plugins {
     // id("kotlin-android-extensions")
     // id("kotlin-kapt")
     id("com.google.devtools.ksp")
-//    kotlin("android.extensions")
-    id("kotlin-parcelize")
+//    kotlin("android.extensions)"
 }
 android {
     namespace = "com.example.notesapp"
@@ -16,8 +15,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.notesapp"
-        minSdk = 28
-        targetSdk = 33
+        minSdk = 24
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -40,7 +39,6 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.majorVersion
     }
-    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -74,10 +72,10 @@ dependencies {
     //crop image library
     //implementation("com.softhearted.modded:android-image-cropper:2.8.0")
     //easy permission
-    //implementation("pub.devel:easy permissions:3.0.0")
+//    implementation("pub.devrel:easypermissions:3.0.0")
     //coroutines core
 //    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
-    implementation("io.appwrite:sdk-for-android:4.0.0")
+    implementation("io.appwrite:sdk-for-android:4.0.1")
 }
 
 
